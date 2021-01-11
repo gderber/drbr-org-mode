@@ -49,7 +49,6 @@
   '(
     ;; Org
     (org-mind-map :location elpa)
-    (org-journal :location elpa)
     ;; Org-noter maybe?
     ;;(org-super-agenda :location elpa)
     ;;(org-contacts :location built-in)
@@ -95,9 +94,6 @@ Each entry is either:
 
 ;;(defun drbr-org-mode/init-org-super-agenda()
 ;;  (use-package org-super-agenda))
-
-(defun drbr-org-mode/init-org-journal()
-  (use-package org-journal))
 
 ;; (defun drbr-org-mode/post-init-persp-mode ()
 ;;   (spacemacs|define-custom-layout "@Drbr-Org"
