@@ -49,8 +49,6 @@
 (custom-set-variables
  ;; Files and Directories
  '(org-directory "~/Documents/Org/")
- '(org-journal-dir "~/Documents/Org/.journal/")
- '(org-journal-file-format "%Y%m%d")
  ;;'(org-journal-date-format "%e %b %Y (%A)")
  ;;'(org-journal-time-format "")
  '(org-agenda-files (list org-directory))
@@ -194,9 +192,7 @@
 (with-eval-after-load 'org
   (add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
 
-  ;;(with-eval-after-load 'org-agenda
-  ;;  (require 'org-projectile)
-  ;;  (push (org-projectile:todo-files) org-agenda-files))
+
   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
   (add-to-list 'auto-mode-alist '("\\.org.gpg$" . org-mode))
   (add-to-list 'auto-mode-alist '("\\.ref$" . org-mode))
@@ -204,6 +200,13 @@
   (add-to-list 'auto-mode-alist '("\\.nnotes$" . org-mode))
   (add-to-list 'auto-mode-alist '("\\.nnotes.gpg$" . org-mode))
   )
+
+;; (with-eval-after-load 'org-agenda
+;;   (require 'org-projectile)
+;;   (mapcar '(lambda (file)
+;;              (when (file-exists-p file)
+;;                (push file org-agenda-files)))
+;;           (org-projectile-todo-files)))
 
 (spacemacs|define-custom-layout "@Drbr-Org"
   :binding "O"
