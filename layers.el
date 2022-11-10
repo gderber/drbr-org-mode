@@ -47,19 +47,6 @@
 
 (configuration-layer/declare-layers
  '(
-   drbr-common
-   (org :variables
-        org-enable-notifications t
-        org-start-notification-daemon-on-startup t
-        org-enable-org-journal-support t
-        org-journal-dir "~/Documents/Org/.journal/"
-        org-journal-file-format "%Y-%m-%d"
-        org-enable-github-support t
-        org-projectile-file "TODOs.org"
-        org-want-todo-bindings t
-        org-enable-org-brain-support t
-        org-enable-epub-support t)
-
    ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -46,6 +46,26 @@
 ;;; Code:
 
 ;; Key bindings
+
+;; (setq org-agenda-custom-commands
+;;       '(("d" todo "DELEGATED" nil)
+;;         ("c" todo "DONE|DEFERRED|CANCELLED" nil)
+;;         ("w" todo "WAITING" nil)
+;;         ("f" agenda "" ((org-agenda-ndays 14)))
+;;         ("W" agenda "" ((org-agenda-ndays 21)))
+;;         ("A" agenda ""
+;;          ((org-agenda-skip-function
+;;            (lambda nil
+;;              (org-agenda-skip-entry-if (quote notregexp) "\\=.*\\[#A\\]")))
+;;           (org-agenda-ndays 1)
+;;           (org-agenda-overriding-header "Today's Priority #A tasks: ")))
+;;         ("u" alltodo ""
+;;          ((org-agenda-skip-function
+;;            (lambda nil
+;;              (org-agenda-skip-entry-if (quote scheduled) (quote deadline)
+;;                                        (quote regexp) "\n]+>")))
+;;           (org-agenda-overriding-header "Unscheduled TODO entries: ")))))
+
 ;;(global-set-key "\C-cl" 'org-store-link)
 ;;(global-set-key "\C-ca" 'org-agenda)
 ;;(global-set-key "\C-cc" 'org-capture)
